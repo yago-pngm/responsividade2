@@ -1,0 +1,34 @@
+.cabecalho{
+    display: flex;
+    padding: 1em;
+    background-color: var(--cor-do-cabecalho);
+    align-items: center;
+    justify-content: space-between;
+
+}
+.container{
+    display: flex;
+}
+.container__titulo{
+    display: none;
+}
+.cabecalho__texto{
+    display: none;
+}
+@media screen and (min-width:820px) {
+
+    .container__titulo{
+        display: block;
+        margin-left: 0.5em;
+    }
+ 
+}
+@media screen and (min-width:1024px) {
+
+    .cabecalho__texto{
+        font-style: italic;
+        display: block;
+        padding: 2em;
+    }
+ 
+}
